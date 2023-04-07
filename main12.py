@@ -1,4 +1,4 @@
 s = "aab qq c badcc a qqqqqaqqqqaa tpara"
-for i in s.split():
-    if i.count("a") == 2:
-        print(i.title(), end=" ")
+words = s.split()
+s2 = [i for i in words if i.count("a") == 2]
+print(" ".join(s2).title())
