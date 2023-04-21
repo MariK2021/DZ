@@ -19,8 +19,9 @@ for i in users:
         age = int(fields[1].strip())
     else:
         age = None
-    phones = ['+' + phone.strip(' +') for phone in fields[2].split(',') if phone.strip()] if len(fields) == 3 else []
-    result.append({'name': name, 'age': age, 'phones': phones})
+    phones = [phone.strip() for phone in fields[2].split(',') if phone.strip()] if len(fields) == 3 else []
+    if name:
+        result.append({'name': name, 'age': age, 'phones': phones})
 print(result)
 
 # json
