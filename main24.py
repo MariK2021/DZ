@@ -1,10 +1,16 @@
 def second_largest_number(lst):
     if not lst:
         return None
-    else:
-        lst.sort()
-        return lst[-2]
+    largest = float('-inf')  # float('-inf') - це від'ємна нескінченність
+    second_largest = float('-inf')  # float('-inf') - це від'ємна нескінченність
+    for num in lst:
+        if num > largest:
+            second_largest = largest
+            largest = num
+        elif num > second_largest and num != largest:
+            second_largest = num
+    return second_largest
 
 
-print(second_largest_number([3, 1, -5, -3, 0, -3, 2.10, 2.20, -5]))
+print(second_largest_number([1, 2, 2]))
 print(second_largest_number([]))
