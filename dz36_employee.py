@@ -1,5 +1,5 @@
-from order_payment_system import Order
-from product_storage_suppliers import Product
+from dz36_order_payment_system import Order
+from dz36_product_storage_suppliers import Product
 
 
 class Employee:

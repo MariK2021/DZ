@@ -1,4 +1,4 @@
-from order_payment_system import Order
+from dz36_order_payment_system import Order
 
 
 class Product:
