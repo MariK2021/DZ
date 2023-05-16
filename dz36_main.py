@@ -1,14 +1,14 @@
-from order_payment_system import Order
-from order_payment_system import PaymentSystem
+from dz36_order_payment_system import Order
+from dz36_order_payment_system import PaymentSystem
 
-import client_client
+from dz36_client import Client
 
-from employee import OrderPickers
-from employee import Packers
+from dz36_employee import OrderPickers
+from dz36_employee import Packers
 
-from product_storage_suppliers import Product
-from product_storage_suppliers import Storage
-from product_storage_suppliers import Suppliers
+from dz36_product_storage_suppliers import Product
+from dz36_product_storage_suppliers import Storage
+from dz36_product_storage_suppliers import Suppliers
 
 order1 = Order(1, "MP1W0", 2000, "UApost")
 order2 = Order(2, "KI3VT", 1000, "UApost")
@@ -16,7 +16,7 @@ payment_system = PaymentSystem("Liqpay", "UAH")
 payment_system.make_status(order1)
 print(order1.status)    # payment status for order
 
-client = client_client.Client("Maryna")
+client = Client("Maryna")
 client.make_order("Dress")
 client.make_order("Bag")
 print(str(client))  # client's orders
