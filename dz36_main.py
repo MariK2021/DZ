@@ -39,4 +39,4 @@ print(dress.take_product_from_suppliers(product1)) # info about delivery from su
 packer1 = Packers("Olga", 2000, "None", "packer")
 print(order_picker1.send_order_to_packer())  # which orders are in work (packer)
 
-print(packer1.order_to_shipping) # which orders go to shipping company
+print(packer1.order_to_shipping) # which orders go to the shipping company
