@@ -17,11 +17,6 @@ class Order(AttributePrinterMixin):
         self.__price = price
         self._client = "Hillel"
 
-    @property
-    def total_sum(self):
-        return self.__price
-
-
 class InnerOrder(Order):
     def __init__(self, order_id, article, price, netto_price):
         super().__init__(order_id, article, price)
