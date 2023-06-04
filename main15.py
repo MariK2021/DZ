@@ -5,12 +5,9 @@ if min_number > max_number:
     print("Error")
 lst2 = [i for i in lst if min_number <= i <= max_number]
 number = 1
-for i in lst:
-    if min_number <= i <= max_number:
-        number = number * i
+for i in lst2:
+    number = number * i
 if number == 1:
     print("sum = 0, product = 0")
 else:
     print(f"sum = {sum(lst2)}, product = {number}")
-
-

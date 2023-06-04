@@ -1,5 +1,6 @@
 import random
 
+
 def generate_random_string(length):
     result = ''
     for i in range(length):
@@ -8,5 +9,6 @@ def generate_random_string(length):
             random_num = random.randint(48, 122)
         result += chr(random_num)
     return result
+
 
 print(generate_random_string(12))

@@ -38,5 +38,6 @@ class Packers(Employee):
     def send_order_to_shipping(self, send_order_to_packer):
         self.order_to_shipping = send_order_to_packer()
 
-order1 = Order(1, "MP1W0", 2000, "UApost")
-product1 = Product(order1.article)
+# order1 = Order(1, "MP1W0", 2000, "UApost")
+# product1 = Product(order1.article)
+

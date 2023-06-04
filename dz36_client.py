@@ -7,4 +7,4 @@ class Client:
         self._list_of_orders.append(order)
 
     def __str__(self):
-        return f"Your items are: {self._list_of_orders}"
+        return f"{self.name}, your items are: {self._list_of_orders}"
